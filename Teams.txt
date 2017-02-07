@@ -1,0 +1,91 @@
+Team 1: 
+Nithu
+Chris
+Victor
+Kevin
+DeAndre
+Sherry
+
+Team 2
+Gerri
+Mike
+Jerico
+Ray
+George
+
+Team 3
+Alicia
+Greg
+Jelani
+Eric
+Chaz
+Hamed
+
+code for getting a button to stay disabled till conditions met:
+<!DOCTYPE html>
+<html>
+
+<body>
+<script type="text/javascript" >
+var yes =true;
+document.getElementById("Acc").hidden = true;
+
+function active(){
+document.getElementById("ch").hidden = false;
+document.getElementById("Acc").hidden = false;
+document.getElementById("Acc").disabled = true;
+
+document.getElementById("ch").checked = 
+
+if(!document.getElementById("ch").checked == true){
+document.getElementById("Acc").disabled = true;
+}
+else{
+document.getElementById("Acc").disabled = false;
+}
+}
+
+</script>
+<input id="Start" type="button" value="Start" onClick="active()" />
+<input hidden="" id="ch" type="checkbox" value="one"  />
+<input hidden="" id="Acc" type="button" value="SignIn" />
+
+</body>
+</html>
+
+
+Code for setting up background info for the Checkbox info:
+
+Check the web site programming language you know:
+<form action="script.php" method="post">
+<input type="checkbox" name="chb[]" value="HTML" />HTML<br/>
+<input type="checkbox" name="chb[]" value="CSS" />CSS<br/>
+<input type="checkbox" name="chb[]" value="JavaScript" />JavaScript<br/>
+<input type="checkbox" name="chb[]" value="PHP" />php<br/>
+<input type="checkbox" name="chb[]" value="Python" />Python<br/>
+<input type="checkbox" name="chb[]" value=".NET" />Net<br/>
+<input type="checkbox" name="chb[]" value="Other" />Other<br/>
+<input type="button" value="Click" onclick="getSelectedChbox()" id="btntest" />
+</form>
+<p id="demo"></p>
+
+<script type="text/javascript">
+
+var selchbox = [];
+
+function getSelectedChbox() {
+
+  // gets all the input tags and their number
+  var inpfields = document.getElementsByTagName('input');
+  var nr_inpfields = inpfields.length;
+
+  // traverse the inpfields elements, and adds the value of selected (checked) checkbox in selchbox
+  for(var i=0; i<nr_inpfields; i++) {
+    if(inpfields[i].type == 'checkbox' && inpfields[i].checked == true) selchbox.push(inpfields[i].value);
+  }
+
+  document.getElementById("demo").innerHTML = (selchbox);
+
+}
+
+</script>
