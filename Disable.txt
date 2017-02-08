@@ -1,0 +1,23 @@
+function check()
+{
+var ele = document.getElementsByName('a');
+var flag=0;
+for(var i=0;i<ele.length;i++)
+{
+    if(ele[i].checked)
+     flag=1;
+   
+} 
+if(flag==1)
+document.getElementById('choose').disabled=false;
+else
+document.getElementById('choose').disabled=true;
+}
+
+<form method="POST" id="question">
+    <input type='checkbox' name='a' value='a' id='checkMe' onclick="check()"/> a 
+    <input type='checkbox' name='a' value='b' id='checkMe' onclick="check()" /> b  
+    <input type='checkbox' name='a' value='c' id='checkMe' onclick="check()" /> c    
+</br>
+    <input type='submit' value='choose' id='choose' disabled="disabled"/>    
+</form>
