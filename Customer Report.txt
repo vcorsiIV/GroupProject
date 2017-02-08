@@ -1,0 +1,20 @@
+Overall I feel statisied with Novatio performed on my renovation project. >RadioButton (single down)
+
+(done)What was the budget you had for this project? >Radio(single down)
+
+(done)Select to projects you had done. > Checkbox(down other will lead to a textbox page which will lead back to questions)
+
+How was the finished project:>>Radio(muti down satisfying)
+-Value
+-Time it took to complete
+-Employee Conduct
+-Overall Quality
+
+>>Radio(multi down agree/disagree)
+-Novatio project manager was knowledgeable and professional.
+-The employees that work on your project performed their job well
+-Novatio was helpful thoughout the poject.
+-I would recommend your services to a friend
+-If need work done again I would hire Novatio
+
+
